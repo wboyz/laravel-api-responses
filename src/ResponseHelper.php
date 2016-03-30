@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelApiResponse;
+namespace Wboyz\LaravelApiResponse;
 
 use Illuminate\Http\Response as IlluminateResponse;
 use Illuminate\Support\Facades\Response;
