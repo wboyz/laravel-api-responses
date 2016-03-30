@@ -6,7 +6,11 @@
     "license": "MIT",
     "keywords": ["laravel", "api", "helper"],
     "homepage": "https://github.com/wboyz/laravel-api-responses",
-    "prefer-stable": true,
+    "autoload": {
+        "files": [
+            "helpers.php"
+        ]
+    },
     "require": {
         "php": ">=5.5.9",
         "illuminate/http": "^5.2"
