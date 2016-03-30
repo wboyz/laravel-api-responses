@@ -1,8 +1,12 @@
 {
     "name": "wboyz/laravel-api-responses",
     "description": "Api response helper for Laravel.",
+    "type": "helper",
     "license": "MIT",
+    "keywords": ["laravel", "api", "helper"],
+    "homepage": "https://github.com/wboyz/laravel-api-responses",
     "require": {
+        "php": ">=5.5.9",
         "illuminate/http": "^5.2"
     },
     "authors": [
