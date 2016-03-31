@@ -7,9 +7,9 @@
     "keywords": ["laravel", "api", "helper"],
     "homepage": "https://github.com/wboyz/laravel-api-responses",
     "autoload": {
-        "files": [
-            "helpers.php"
-        ]
+        "psr-4": {
+            "Laravel\\LaravelApiResponses\\": "src/"
+        }
     },
     "require": {
         "php": ">=5.5.9",

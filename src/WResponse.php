@@ -1,11 +1,10 @@
 <?php
 
-namespace Wboyz\LaravelApiResponse;
+namespace Laravel\LaravelApiResponses;
 
 use Illuminate\Http\Response as IlluminateResponse;
-use Illuminate\Support\Facades\Response;
 
-class Response
+class WResponse
 {
     protected static $response = null;
 
@@ -13,15 +12,6 @@ class Response
      * @var int
      */
     protected $statusCode = IlluminateResponse::HTTP_OK;
-
-    public static function instantiate()
-    {
-        if (is_null(static::$response)) {
-            static::$response = new static;
-        }
-
-        return static::$response;
-    }
 
     /**
      * @param $statusCode
