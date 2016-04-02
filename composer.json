@@ -1,7 +1,7 @@
 {
     "name": "wboyz/laravel-api-responses",
     "description": "Api response helper for Laravel.",
-    "version": "0.1.0",
+    "version": "0.3.0",
     "type": "helper",
     "license": "MIT",
     "keywords": ["laravel", "api", "helper"],
