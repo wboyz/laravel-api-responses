@@ -1,14 +1,14 @@
 {
     "name": "wboyz/laravel-api-responses",
     "description": "Api response helper for Laravel.",
-    "version": "0.3.0",
+    "version": "v0.3.1",
     "type": "helper",
     "license": "MIT",
     "keywords": ["laravel", "api", "helper"],
     "homepage": "https://github.com/wboyz/laravel-api-responses",
     "autoload": {
         "psr-4": {
-            "Laravel\\LaravelApiResponses\\": "src/"
+            "WBoyz\\LaravelApiResponses\\": "src/"
         }
     },
     "require": {
