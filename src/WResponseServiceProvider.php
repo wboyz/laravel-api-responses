@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\LaravelApiResponses;
+namespace WBoyz\LaravelApiResponses;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -23,7 +23,7 @@ class WResponseServiceProvider extends ServiceProvider
         $this->app->singleton('WResponse', function ($app) {
             return new WResponse();
         });
-//        $this->app->singleton('Laravel\LaravelApiResponses\Contracts\WResponseFactory', function ($app) {
+//        $this->app->singleton('WBoyz\LaravelApiResponses\Contracts\WResponseFactory', function ($app) {
 //            return new WResponse($app);
 //        });
     }

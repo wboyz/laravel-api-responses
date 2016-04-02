@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\LaravelApiResponses\Facades;
+namespace WBoyz\LaravelApiResponses\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -13,7 +13,7 @@ class WResponse extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Laravel\LaravelApiResponses\WResponse';
-//        return 'Laravel\LaravelApiResponses\Contracts\WResponseFactory';
+        return 'WBoyz\LaravelApiResponses\WResponse';
+//        return 'WBoyz\LaravelApiResponses\Contracts\WResponseFactory';
     }
 }

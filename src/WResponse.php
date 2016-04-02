@@ -1,8 +1,9 @@
 <?php
 
-namespace Laravel\LaravelApiResponses;
+namespace WBoyz\LaravelApiResponses;
 
 use Illuminate\Http\Response as IlluminateResponse;
+use Response;
 
 class WResponse
 {
