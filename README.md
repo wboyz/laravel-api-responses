@@ -21,7 +21,7 @@ After updating composer, add the ServiceProvider to the providers array in confi
 WBoyz\LaravelApiResponses\WResponseServiceProvider::class,
 ```
 
-If you want to use the facade to log messages, add this to your facades in app.php:
+If you want to use the facade, add this to your facades in app.php:
 
 ```
 'Debugbar' => WBoyz\LaravelApiResponses\Facades\WResponse::class,
