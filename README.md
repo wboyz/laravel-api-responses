@@ -24,7 +24,7 @@ WBoyz\LaravelApiResponses\WResponseServiceProvider::class,
 If you want to use the facade, add this to your facades in app.php:
 
 ```
-'Debugbar' => WBoyz\LaravelApiResponses\Facades\WResponse::class,
+'WResponse' => WBoyz\LaravelApiResponses\Facades\WResponse::class,
 ```
 
 ### Usage
