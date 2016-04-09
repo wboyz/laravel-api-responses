@@ -17,13 +17,13 @@ After updating composer, add the ServiceProvider to the providers array in confi
 
 ### Laravel 5.x:
 
-```
+```php
 WBoyz\LaravelApiResponses\WResponseServiceProvider::class,
 ```
 
 If you want to use the facade, add this to your facades in app.php:
 
-```
+```php
 'WResponse' => WBoyz\LaravelApiResponses\Facades\WResponse::class,
 ```
 
