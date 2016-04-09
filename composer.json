@@ -9,7 +9,10 @@
     "autoload": {
         "psr-4": {
             "WBoyz\\LaravelApiResponses\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     },
     "require": {
         "php": ">=5.5.9",

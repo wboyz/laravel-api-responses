@@ -23,9 +23,6 @@ class WResponseServiceProvider extends ServiceProvider
         $this->app->singleton('WResponse', function ($app) {
             return new WResponse();
         });
-//        $this->app->singleton('WBoyz\LaravelApiResponses\Contracts\WResponseFactory', function ($app) {
-//            return new WResponse($app);
-//        });
     }
 
     /**
