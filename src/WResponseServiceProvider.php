@@ -21,7 +21,7 @@ class WResponseServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('WResponse', function ($app) {
-            return new WResponse();
+            return new \WBoyz\LaravelApiResponses\WResponse();
         });
     }
 

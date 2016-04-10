@@ -13,7 +13,6 @@ class WResponse extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'WBoyz\LaravelApiResponses\WResponse';
-//        return 'WBoyz\LaravelApiResponses\Contracts\WResponseFactory';
+        return 'WResponse';
     }
 }
