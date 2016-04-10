@@ -32,5 +32,15 @@ If you want to use the facade, add this to your facades in app.php:
 You can return responses using the Facade (when added), using the supported methods:
 
 ```php
-WResponse::respondNotFound('Not Found!');
+public function index() {
+    return WResponse::respondNotFound('Not Found!');
+}
+```
+
+You can now return responses using the global helper function wresponse:
+
+```php
+public function index() {
+    return wresponse()->respondNotFound('Not Found!');
+}
 ```
