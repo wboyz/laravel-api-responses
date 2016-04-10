@@ -24,7 +24,7 @@ WBoyz\LaravelApiResponses\WResponseServiceProvider::class,
 If you want to use the facade, add this to your facades in app.php:
 
 ```php
-'WResponse' => WBoyz\LaravelApiResponses\Facades\WResponse::class,
+'WResp' => WBoyz\LaravelApiResponses\Facades\WResponse::class,
 ```
 
 ### Usage
@@ -33,7 +33,7 @@ You can return responses using the Facade (when added), using the supported meth
 
 ```php
 public function index() {
-    return WResponse::respondNotFound('Not Found!');
+    return WResp::respondNotFound('Not Found!');
 }
 ```
 
