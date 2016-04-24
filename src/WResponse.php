@@ -37,6 +37,24 @@ class WResponse
      * @param string $message
      * @return mixed
      */
+    public function respondUnauthorized($message = 'Unauthorized!')
+    {
+        return $this->setStatusCode(IlluminateResponse::HTTP_UNAUTHORIZED)->respondWithError($message);
+    }
+
+    /**
+     * @param string $message
+     * @return mixed
+     */
+    public function respondForbidden($message = 'Forbidden!')
+    {
+        return $this->setStatusCode(IlluminateResponse::HTTP_FORBIDDEN)->respondWithError($message);
+    }
+
+    /**
+     * @param string $message
+     * @return mixed
+     */
     public function respondNotFound($message = 'Not Found!')
     {
         return $this->setStatusCode(IlluminateResponse::HTTP_NOT_FOUND)->respondWithError($message);
