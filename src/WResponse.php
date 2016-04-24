@@ -65,7 +65,7 @@ class WResponse
      * @param object $model
      * @return mixed
      */
-    public function respondCreated($message = 'Resource Successfully Created.', $model = null)
+    public function respondCreated($model = null, $message = 'Resource Successfully Created.')
     {
         $data = [ 'message' => $message ];
         if ($model) {
