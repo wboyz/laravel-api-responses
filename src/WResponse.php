@@ -2,8 +2,8 @@
 
 namespace WBoyz\LaravelApiResponses;
 
-use Illuminate\Http\Response as IlluminateResponse;
 use Response;
+use Illuminate\Http\Response as IlluminateResponse;
 
 class WResponse
 {
@@ -62,13 +62,17 @@ class WResponse
 
     /**
      * @param string $message
+     * @param object $model
      * @return mixed
      */
-    public function respondCreated($message = 'Resource Successfully Created.')
+    public function respondCreated($message = 'Resource Successfully Created.', $model = null)
     {
-        return $this->setStatusCode(IlluminateResponse::HTTP_CREATED)->respond([
-            'message' => $message
-        ]);
+        $data = [ 'message' => $message ];
+        if ($model) {
+            $data['model'] = $model;
+        }
+
+        return $this->setStatusCode(IlluminateResponse::HTTP_CREATED)->respond($data);
     }
 
     /**
